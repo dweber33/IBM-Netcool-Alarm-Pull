@@ -31,7 +31,7 @@ def dump_netcool_alerts(output_file="netcool_all_alarms.csv", total_days=1, chun
             sTime = current_start.strftime("%H:%M")
             eTime = current_end.strftime("%H:%M")
             
-            url = f"https://{NETCOOL_FQDN}/cgi-bin/Oracle/search_hist.cgi?OwnerGID=10&sev5=5&sev4=4&sev3=3&sev2=2&sev1=1&sev0=0&sDate={sDate}&sTime={sTime}&eDate={eDate}&eTime={eTime}&csv=1"
+            url = f"https://{NETCOOL_FQDN}/cgi-bin/Oracle/search_hist.cgi?sev5=5&sev4=4&sev3=3&sev2=2&sev1=1&sev0=0&sDate={sDate}&sTime={sTime}&eDate={eDate}&eTime={eTime}&csv=1"
             
             print(f"Fetching chunk from {sDate} to {eDate}...")
             
