@@ -1,4 +1,3 @@
-markdown
 # Netcool Alarm Exporter (`dump_netcool_alarms.py`)
 `dump_netcool_alarms.py` is a Python script that extracts historical Netcool alert data for a specified time window and exports the results to a CSV file for analysis and comparison.
 ---
